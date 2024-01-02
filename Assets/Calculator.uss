@@ -1,0 +1,139 @@
+VisualElement {
+    width: 100%;
+    height: 100%;
+}
+
+#screen {
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(29, 29, 29);
+}
+
+#display {
+    flex-grow: 1;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    -unity-font: url('project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=e7d4338689f73044f85bd5eb6b51a5b6&type=3#NotInter-Regular');
+    -unity-text-align: middle-right;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
+
+Label {
+    color: white;
+}
+
+#equation-box {
+    justify-content: flex-end;
+    right: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    font-size: 400%;
+    white-space: nowrap;
+}
+
+#equation {
+    right: 0;
+    width: auto;
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+#result-box {
+    right: 0;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    font-size: 150%;
+}
+
+#pulldown {
+    left: 0;
+    top: 0;
+    height: 10%;
+}
+
+#buttons {
+    flex-grow: 1;
+    left: 0;
+    top: 30%;
+    height: 70%;
+    position: absolute;
+}
+
+.row {
+    justify-content: center;
+    align-self: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0.5%;
+    margin-left: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-row {
+    margin-top: 0.5%;
+}
+
+.row > .unity-button {
+    height: 100%;
+    width: 24.375%;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-right: 0.5%;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-font: url('project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=e7d4338689f73044f85bd5eb6b51a5b6&type=3#NotInter-Regular');
+    -unity-font-style: normal;
+    -unity-text-align: middle-center;
+    color: white;
+}
+
+.row > .left-button {
+    margin-left: 0.5%;
+}
+
+.operator {
+    background-color: rgb(48, 48, 48);
+}
+
+.operator:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+.number-button {
+    background-color: rgb(63, 63, 63);
+}
+
+.number-button:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+#backspace {
+    background-color: rgb(63, 63, 63);
+}
+
+#backspace:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+#equal {
+    background-color: rgb(106, 106, 106);
+}
+
+#equal:hover {
+    background-color: rgb(86, 86, 86);
+}

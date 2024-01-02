@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Calculator.uss?fileID=7433441132597879392&amp;guid=4170f55e0c3e5be49b70796c2a66cd85&amp;type=3#Calculator" />
+    <ui:VisualElement name="screen" />
+    <ui:VisualElement name="display">
+        <ui:VisualElement name="equation-box">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="equation" />
+        </ui:VisualElement>
+        <ui:VisualElement name="result-box">
+            <ui:Label tabindex="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="result" />
+        </ui:VisualElement>
+        <ui:VisualElement name="pulldown" />
+    </ui:VisualElement>
+    <ui:VisualElement name="buttons">
+        <ui:VisualElement name="r1" class="row top-row">
+            <ui:Button text="CE" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator left-button" />
+            <ui:Button text="( )" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+            <ui:Button text="%" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+            <ui:Button text="!" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="r2" class="row">
+            <ui:Button text="⅟ₓ" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator left-button" />
+            <ui:Button text="x²" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+            <ui:Button text="√x" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+            <ui:Button text="÷" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="r3" class="row">
+            <ui:Button text="7" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button left-button" />
+            <ui:Button text="8" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="9" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="×" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="r4" class="row">
+            <ui:Button text="4" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button left-button" />
+            <ui:Button text="5" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="6" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="r5" class="row">
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button left-button" />
+            <ui:Button text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" class="operator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="r6" class="row">
+            <ui:Button text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button left-button" />
+            <ui:Button text="." parse-escape-sequences="true" display-tooltip-when-elided="true" class="number-button" />
+            <ui:Button text="←" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backspace" class="operator" />
+            <ui:Button text="=" parse-escape-sequences="true" display-tooltip-when-elided="true" name="equal" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
